@@ -87,6 +87,10 @@ router.get("/member/:serial", (req, res) => {
     });
 });
 
+router.post("/member", (req, res) => {
+    const { member_name, member_serial_number } = req.body;
+});
+
 // db.close((err) => {
 //     if (err) {
 //         console.error(err.message);
